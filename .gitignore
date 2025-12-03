@@ -23,3 +23,7 @@ backend/.env
 *.njsproj
 *.sln
 *.sw?
+.env
+venv/
+node_modules/
+__pycache__/
