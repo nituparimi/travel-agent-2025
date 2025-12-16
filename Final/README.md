@@ -136,6 +136,7 @@ Educational & demonstration purposes.
 Built with FastAPI, React, AWS Bedrock/Claude, Google Gemini, Amadeus API, and Google Places API.
 
 ---
+Demo: https://www.youtube.com/watch?v=tbL1enGz8eg
 
 **For detailed architecture, setup instructions, and technical documentation, see [ARCHITECTURE.md](./ARCHITECTURE.md)**
 
