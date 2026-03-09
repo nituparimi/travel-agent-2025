@@ -26,12 +26,39 @@ The architecture is designed to be:
 
 # High-Level Architecture
 
-User (Voice / Browser) │ ▼ Frontend (React + Voice UI) │ ▼
-Speech-to-Text (Google Gemini Live API) │ ▼ FastAPI Backend │ ▼ AI
-Reasoning Layer (AWS Bedrock - Claude) │ ▼ MCP Router (Intent → Tool
-Mapping) │ ├── Flight Search Tool (Amadeus API) ├── Flight Booking Tool
-├── Hotel Search Tool (Google Places API) └── Hotel Booking Tool (Mock
-Engine) │ ▼ Response Generation │ ▼ Text-to-Speech (Web Speech API) │ ▼
+User (Voice / Browser)
+        │
+        ▼
+Frontend (React + Voice UI)
+        │
+        ▼
+Speech-to-Text
+(Google Gemini Live API)
+        │
+        ▼
+FastAPI Backend
+        │
+        ▼
+AI Reasoning Layer
+(AWS Bedrock - Claude)
+        │
+        ▼
+MCP Router
+(Intent → Tool Mapping)
+        │
+        ├── Flight Search Tool (Amadeus API)
+        ├── Flight Booking Tool
+        ├── Hotel Search Tool (Google Places API)
+        └── Hotel Booking Tool (Mock Engine)
+        │
+        ▼
+Response Generation
+        │
+        ▼
+Text-to-Speech
+(Web Speech API)
+        │
+        ▼
 User
 
 ------------------------------------------------------------------------
@@ -80,6 +107,10 @@ Purpose:
 
 -   Convert AI text responses into voice
 -   Provide conversational feedback
+
+Example:
+  AI Response:
+"I found several flights. Do you prefer one-way or round-trip?"
 
 ------------------------------------------------------------------------
 
